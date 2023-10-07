@@ -5,12 +5,12 @@ const fs = require('fs');
 const {v1 : uuidv1} = require('uuid');
 const newId = uuidv1()
 
-const readFileAsync = util.promisify(fs.readfile);
+const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
 class Store {
     read () {
-        return readFileAsync('db/db.json', 'utf8', JSON.stringify(title, text));
+        return readFileAsync('db/db.json', 'utf8');
     }
 
     write (note) {
