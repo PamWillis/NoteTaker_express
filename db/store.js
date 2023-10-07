@@ -56,3 +56,5 @@ class Store {
         .then((filteredNotes) => this.write(filteredNotes));
     }
 }
+
+
