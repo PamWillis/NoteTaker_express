@@ -2,7 +2,7 @@ const router = require('express').Router();
 const store = require('../../db/store.js');
 
 // GET "/api/notes" responds with notes from database
-router.get('/notes', (req, res) => {
+router.get('/api/notes', (req, res) => {
   store
   .getNotes()
   .then((notes) => {
@@ -11,7 +11,7 @@ router.get('/notes', (req, res) => {
   .catch((err) => res.status(500).json(err));
 });
 
-router.post('/notes', (req,res) => {
+router.post('/api/notes', (req,res) => {
     store
     .addNote(req.body)
     .then((note) => res.json(note))
@@ -19,7 +19,7 @@ router.post('/notes', (req,res) => {
 });
 
 //DELETE "api/notes" deletes note with an id equal to req.params.id
-router.delete('/notes/:id', (req,res) => {
+router.delete('/api/notes/:id', (req,res) => {
     store
     .removeNote(req.params.id)
     .then(() => res.json({ ok: true }))
