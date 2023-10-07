@@ -56,6 +56,6 @@ class Store {
         .then((filteredNotes) => this.write(filteredNotes));
     }
 }
-// module.exports = { getNotes }
+module.exports = { Store };
 
 
