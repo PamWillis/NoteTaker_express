@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 // "/notes" responds with notes.html file
 router.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/notes.html'));
+    res.sendFile(path.join(__dirname, '../notes.html'));
 });
 
 // All other routes respond with the index.html file
