@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // routes to route files
-require('./public/route/apiRoutes')(app);
-require('./public/route/htmlRoutes')(app);
+require('./route/apiRoutes')(app);
+require('./route/htmlRoutes')(app);
 
 //app listener to start the server
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
