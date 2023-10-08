@@ -5,9 +5,36 @@ body {
   padding: 0;
 }
 
-.save-note, .new-note, .clear-btn {
-  display: visible;
+.save-note {
+  color: white;
+  border: rgb(34, 141, 34);
+  border-radius: .03px;
+  padding: 2px;
+  display: none;
+ 
+
 }
+
+.new-note {
+  color: white;
+  border: rgb(79, 34, 141);
+  border-radius: .03px;
+  padding: 2px;
+  display: none;
+
+
+}
+
+.clear-btn {
+  color: red;
+  border: rgb(241, 86, 8);
+  border-radius: .03px;
+  padding: 2px;
+  display: none;
+
+}
+
+
 
 
 .icons {
@@ -37,10 +64,18 @@ body {
   font-size: 3rem;
 }
 
-.note-title:read-only,
+.hide {
+  display: none;
+}
+
+.show {
+  display: visible;
+}
+
+/* .note-title:read-only,
 .note-textarea:read-only {
   color: #757575;
-}
+} */
 
 .list-container .card {
   height: calc(100vh - 70px);
