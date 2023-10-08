@@ -6,38 +6,10 @@ body {
 }
 
 .save-note {
-  color: white;
-  border: rgb(34, 141, 34);
-  border-radius: .03px;
-  padding: 2px;
   display: none;
- 
-
 }
 
-.new-note {
-  color: white;
-  border: rgb(79, 34, 141);
-  border-radius: .03px;
-  padding: 2px;
-  display: none;
-
-
-}
-
-.clear-btn {
-  color: red;
-  border: rgb(241, 86, 8);
-  border-radius: .03px;
-  padding: 2px;
-  display: none;
-
-}
-
-
-
-
-.icons {
+.icons i {
   margin-left: 15px;
   margin-right: 15px;
   font-size: 1.5rem;
@@ -64,18 +36,10 @@ body {
   font-size: 3rem;
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: visible;
-}
-
-/* .note-title:read-only,
+.note-title:read-only,
 .note-textarea:read-only {
   color: #757575;
-} */
+}
 
 .list-container .card {
   height: calc(100vh - 70px);
