@@ -2,14 +2,15 @@ const path = require("path");
 const fs = require("fs");
 const app = require("express").Router();
 
-//this package will be used to generate our unique ids. https://www.npmjs.com/package/uuid
+//this package will be used to generate our unique ids. https://www.npmjs.com/package/uniqid
 var uniqid = require("uniqid");
 
 app.get("/notes", async (req, res) => {
   res.sendFile(path.join(__dirname, "../db/db.json"));
 });
 
-//POST/api/notes - should receive a note to save on the request body, at it to the db.json and return a note to client
+//POST/api/notes - should receive a note to save on the request body, 
+// add it to the db.json and return a note to client
 app.post("/notes", (req, res) => {
   let db = fs.readFileSync(path.join(__dirname, "../db/db.json"));
   db = JSON.parse(db);
